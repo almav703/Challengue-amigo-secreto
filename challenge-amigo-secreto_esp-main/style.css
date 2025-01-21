@@ -1,13 +1,18 @@
 :root {
-    --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
+    --color-primary: #ef74df;
+    --color-secondary: #f9e8f9;
     --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
-    --color-text: #444444;
+    --color-button: #f8b197;
+    --color-button-hover: #fbdada;
+    --color-text: #000000;
     --color-white: #FFFFFF;
 }
 
+.amigoSecreto{
+    width: 300px;
+    height: 300px;
+    border-radius: 500px;
+}
 /* Estilos generales */
 * {
     margin: 0;
@@ -44,7 +49,6 @@ body {
     flex: 60%;
     background-color: var(--color-secondary);
     border: 1px solid #000;
-    border-radius: 64px 64px 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,13 +120,13 @@ button {
 }
 
 .button-add {
-    background-color: var(--color-tertiary);
+    background-color: palevioletred;
     color: var(--color-text);
     border-radius: 0 25px 25px 0;
 }
 
 .button-add:hover {
-    background-color: #a1a1a1;
+    background-color: #fbdada;
 }
 
 /* Listas */
@@ -136,7 +140,7 @@ ul {
 
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
+    color: #f9527c;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
