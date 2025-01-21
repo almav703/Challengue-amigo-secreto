@@ -1,15 +1,14 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
+///////////////////////// Instrucciones ///////////////////////////
 /**
- * Descripción
-Editar
+ * 
 Inicia declarando una variable de tipo array, que almacenará los nombres de los amigos ingresados. Ejemplo:
 let amigos = []
-Para saber mas sobre array puedes revisar la siguiente documentación:
+Para saber más sobre array puedes revisar la siguiente documentación:
+*/
 
- */
+// Declarar la variable para almacenar los amigos
 
-
-let nombreAmigo = [];
 
 /**
  * Implementa una función para agregar amigos
@@ -25,8 +24,6 @@ Actualizar el array de amigos: Si el valor es válido, añadirlo al arreglo que 
 Limpiar el campo de entrada: Después de añadir el nombre, restablecer el campo de texto a una cadena vacía.
  */
 
-
-
 /**
  * Crea una función que recorra el array amigos y agregue cada nombre como un elemento <li> dentro de una lista HTML. Usa innerHTML para limpiar la lista antes de agregar nuevos elementos.
 
@@ -41,8 +38,6 @@ Iterar sobre el arreglo: Usa un bucle for para recorrer el arreglo amigos y crea
 Agregar elementos a la lista: Para cada amigo, crear un nuevo elemento de lista.
  */
 
-
-
 /**
  * 
 Escribe una función que seleccione de manera aleatoria uno de los nombres almacenados en el array amigos. Usa Math.random() y Math.floor() para obtener un índice aleatorio.
@@ -55,6 +50,25 @@ Generar un índice aleatorio: Usar Math.random() y Math.floor() para seleccionar
 
 Obtener el nombre sorteado: Utilizar el índice aleatorio para acceder al nombre correspondiente en el arreglo.
 
-Mostrar el resultado: Actualizar el contenido del elemento de resultado utilizando document.getElementById()  e innerHTML para mostrar el amigo sorteado.
- * 
+Mostrar el resultado: Actualizar el contenido del elemento de resultado utilizando document.getElementById() e innerHTML para mostrar el amigo sorteado.
  */
+
+
+// Función para agregar amigos
+function agregarAmigo() {
+    const nombre = document.getElementById('amigo').value;
+
+    // Validación de los campos
+    if (nombre === "") {
+        alert("Por favor, inserte un nombre.");
+        return;
+    }
+
+    // Agregar nuestro nombre al array
+    nombreAmigo.push(nombre);
+    document.getElementById('amigo').value = ""; // Limpiar campo de entrada
+
+    // Mostrar nuestra lista de amigos
+    mostrarAmigos();
+}
+
