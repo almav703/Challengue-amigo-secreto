@@ -54,6 +54,7 @@ Mostrar el resultado: Actualizar el contenido del elemento de resultado utilizan
  */
 
 
+let nombreAmigo = [];
 // Función para agregar amigos
 function agregarAmigo() {
     const nombre = document.getElementById('amigo').value;
@@ -91,4 +92,11 @@ function sortearAmigo() {
         alert("No hay amigos para sortear.");
         return;
     }
+    // Generar un índice aleatorio
+    const indiceAleatorio = Math.floor(Math.random() * nombreAmigo.length);
+    const amigoSorteado = nombreAmigo[indiceAleatorio];
+
+    // Mostrar el amigo secreto
+    const resultado = document.getElementById('resultado');
+    resultado.innerHTML = `<p>El amigo secreto es: <strong>${amigoSorteado}</strong></p>`;
 }
