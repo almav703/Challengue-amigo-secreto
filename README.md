@@ -4,7 +4,7 @@ Este es un proyecto que realicé en el curso de Alura Latam. A continuación, te
 
 ## Vista Previa del Proyecto
 
-![Vista Previa del Proyecto](assets/vista-previa.png)
+![Vista Previa del Proyecto](assets/Vista-previa.png)
 
 ### Especificaciones del Juego:
 1. **Agregar Jugadores**: En esta sección, puedes añadir jugadores al juego. Para agregar un nuevo jugador, simplemente ingresa el nombre en el campo correspondiente y haz clic en el botón "Añadir Jugador".
