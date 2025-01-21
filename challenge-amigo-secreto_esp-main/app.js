@@ -85,3 +85,10 @@ function mostrarAmigos() {
         listaAmigos.appendChild(amigo);
     }
 }
+// Función para sortear un amigo secreto
+function sortearAmigo() {
+    if (nombreAmigo.length === 0) {
+        alert("No hay amigos para sortear.");
+        return;
+    }
+}
