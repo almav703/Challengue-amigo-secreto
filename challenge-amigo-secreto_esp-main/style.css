@@ -2,8 +2,8 @@
     --color-primary: #ef74df;
     --color-secondary: #f9e8f9;
     --color-tertiary: #C4C4C4;
-    --color-button: #f8b197;
-    --color-button-hover: #fbdada;
+    --color-button: #6255d5;
+    --color-button-hover: #bf87f3;
     --color-text: #000000;
     --color-white: #FFFFFF;
 }
@@ -12,6 +12,7 @@
     width: 300px;
     height: 300px;
     border-radius: 500px;
+    padding: 20px;
 }
 /* Estilos generales */
 * {
@@ -59,7 +60,7 @@ body {
 /* Títulos */
 .main-title {
     font-size: 48px;
-    font-family: "Merriweather", serif;
+    font-family: "Playfair Display", serif;
     font-weight: 900;
     font-style: italic;
     color: var(--color-white);
@@ -120,13 +121,13 @@ button {
 }
 
 .button-add {
-    background-color: palevioletred;
+    background-color: rgb(193, 51, 98);
     color: var(--color-text);
     border-radius: 0 25px 25px 0;
 }
 
 .button-add:hover {
-    background-color: #fbdada;
+    background-color: #e26faa;
 }
 
 /* Listas */
